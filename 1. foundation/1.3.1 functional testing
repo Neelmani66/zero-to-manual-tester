@@ -60,5 +60,19 @@ Check if other areas are affected (regression).
 3. Boundary Testing: Test limits of input fields (e.g., min/max length).
 4. Usability Testing: Check if the interface is user-friendly.
 5. Integration Testing: Check interaction between modules or systems.
+6. Regression Testing:	Check existing functionality after changes/fixes	
+7. Smoke Testing:	Quick test to check basic critical functions work
 
 
+6. Tools used for functional testing
+
+Mainly for Manual Functional Testing:
+1. Postman 
+2. SoapUI
+3. Cucumber
+
+Mainly for Automation Functional Testing (but manual testers should know about them):
+1. Selenium
+2. TestComplete
+
+***
