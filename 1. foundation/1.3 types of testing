@@ -1,1 +1,60 @@
 
+🔹 Categorizing Testing Types
+We'll organize 20+ critical types into 4 smart groups:
+
+1️⃣ Based on Access to Code (Box Testing)
+Type	                                 Description	                                                                  
+Black Box	                         Tester knows only inputs and expected outputs. Doesn't see code.	
+White Box                        	 Tester sees the internal logic, code structure, loops, conditions.
+Grey Box	                         Tester has partial code or system knowledge.	
+
+2️⃣ Based on Testing Method (Execution Approach)
+Type	                                Description	
+Manual	                          Test cases are executed manually.	
+Automation	                      Scripts are used to run tests automatically.
+
+❗ Manual testing is great for usability, exploratory.
+Automation is ideal for regression, large test suites.
+
+3️⃣ Based on Testing Level (SDLC Phase)
+These follow the development lifecycle:
+
+Level                            	Goal	                              Who Does It
+Unit	                  Test smallest parts of code.	             Developers (white box)
+Integration	            Test interactions between modules.	       Developers / Testers
+System	                Test entire system end-to-end.	           QA/Testers
+Acceptance	            Validate if system meets business needs.	 Client / Business team / QA
+
+📌 Example:
+
+Unit: test login() function.
+
+Integration: login() + database interaction.
+
+System: Full login to dashboard flow.
+
+Acceptance: Client says “I want only verified users to log in.
+
+4️⃣ Based on Purpose (Why We Test)
+
+✅ Functional Testing (What app should do)
+
+Type	                             Description                         	Example
+
+Smoke	                    Basic build verification	               Check if homepage, login work
+Sanity	                  Narrow check of a recent fix	           Test only cart page after bug fix
+Regression	              Make sure old features still work	       Re-run all login, search tests
+Retesting	                Re-run failed test after fix	           Same test case that failed
+Ad-hoc	                  Unplanned creative testing	             Random inputs, edge cases
+Exploratory             	Learn the app while testing	             Try all buttons/features
+Usability	                Is the UI friendly?	                     Navigation, buttons, clarity
+
+🛠️ Non-Functional Testing (How app behaves)
+
+Type	                            Description                          	Example
+Performance	             Speed, response time (Load, Stress)	     App slows after 1000 users
+Security	               Sensitive data protected?	               Can someone access user profile by changing URL?
+Compatibility            Works on all browsers/devices	           Chrome, Firefox, Android, iPhone
+Localization	           UI/UX works in local language	           Translations, date format
+Recovery	               App recovers from crash/errors	           App handles power cut gracefully
+
