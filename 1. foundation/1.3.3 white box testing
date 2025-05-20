@@ -1,1 +1,73 @@
 
+1. ✅ What is White Box Testing?
+
+White Box Testing (also known as Clear Box, Glass Box, or Structural Testing) is a testing technique where the internal code structure, logic, and design of the software is known and tested.
+You test how the system works internally.
+Focuses on code coverage, logic flow, conditions, paths, loops.
+Usually performed by developers.
+
+🎯 Manual testers need to understand what it is, how it complements black-box testing, and how to read or reference unit tests or coverage reports.
+
+2. 🧩 Why is White Box Testing Important?
+
+Verifies the internal logic is correct.
+Ensures all code paths are executed/tested.
+Detects hidden bugs, security vulnerabilities, and performance bottlenecks.
+Increases code quality, especially when automated.
+
+3. 🕵️ Who Performs It?
+
+Primarily Developers.
+Automation Engineers may also write white-box style test scripts.
+QA may review test coverage to ensure complete testing, especially in Agile teams.
+
+4. 🧪 Types of White Box Testing
+
+Type	                           What it Does
+
+Unit Testing	             Tests individual units/functions in isolation.
+Integration Testing	       Tests interaction between modules or classes (internally).
+Code Coverage Testing	     Measures how much of the source code is tested (100% not always necessary, but higher is better).
+Path Testing	             Ensures every possible path in the code is tested.
+Loop Testing	             Tests loops (for, while, do-while) to verify correct execution and boundaries.
+Condition/Branch Testing   Validates each decision point (if/else, switch) executes correctly.
+
+
+5. ⚙️ Techniques Used in White Box Testing
+
+Technique	                           Description
+
+Statement Coverage	            Has every statement in the code been executed?
+Branch Coverage     	          Have all branches (if/else) been tested?
+Path Coverage	                  Have all possible logical paths been tested?
+Condition Coverage	            Have all Boolean conditions been tested as true and false?
+Multiple Condition Coverage	    Have combinations of conditions been tested?
+
+
+6. 🧰 Common White Box Testing Tools
+
+Tool	                            Used For
+
+JUnit / NUnit / TestNG	     Unit Testing (Java, .NET)
+PyTest                     	 Python unit testing
+JaCoCo / Cobertura	         Code Coverage tools for Java
+SonarQube	                   Static analysis + code quality insights
+CppUnit	                     Unit testing in C++
+Google Test	                 C/C++ unit testing
+Postman with pre-scripts	   API-level white-box checks
+
+
+🧑‍💻 You don’t need to master these as a manual tester, but knowing them helps you collaborate with developers.
+
+
+7. 🧭 White Box vs Black Box Testing
+
+Feature	                     White Box	                             Black Box
+
+Knowledge of Code	           Required	                               Not required
+Performed By	               Developer	                             QA Tester
+Focus	                       Internal Logic	                         Functional Behavior
+Tools	                       Unit Test Frameworks	                   Test Case Mgmt + Manual
+Level	                       Unit, Integration	                     System, UAT, Regression
+
+***
