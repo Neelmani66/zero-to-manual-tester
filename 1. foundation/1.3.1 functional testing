@@ -1,1 +1,64 @@
 
+1. What is Functional Testing?
+
+Functional Testing verifies that the software does what it’s supposed to do according to the requirements.
+Focus is on “functions” — i.e., features, business flows, user actions.
+It answers: Does this feature work correctly?
+
+2. Why is Functional Testing Important?
+
+It ensures the software meets business requirements.
+Helps find bugs in core application logic.
+Prevents release of broken features.
+Used in almost every software project, making it a must-know skill.
+
+3. When & Where is Functional Testing Done?
+
+Mainly during System Testing phase but can also be done during:
+Integration testing (when features/modules are combined)
+User Acceptance Testing (UAT) — by end-users before release
+Done after development is complete for a feature/module.
+
+4. How to Perform Functional Testing?
+
+Step 1: Understand Requirements
+
+1. Read requirement documents, user stories, or specs carefully.
+2. Clarify doubts with Business Analysts (BA) or Product Owners (PO).
+
+Step 2: Prepare Test Cases
+
+Write detailed test cases covering all functional scenarios.
+Example test case template:
+
+Test Case ID  	Test Description  	Input Data	 Expected Result  	Actual Result   	Status (Pass/Fail)
+
+Test cases must be clear, specific, and traceable to requirements.
+
+Step 3: Execute Test Cases
+
+Run the test cases manually.
+Compare actual results with expected results.
+
+Step 4: Log Defects (if any)
+
+For any failure, log a detailed bug report with:
+Steps to reproduce
+Screenshots or videos
+Expected vs actual behavior
+Severity and priority
+
+Step 5: Re-test & Regression
+
+Once bugs are fixed, re-test.
+Check if other areas are affected (regression).
+
+5. Types of Functional Testing
+
+1. Positive Testing: Verify the system works as expected with valid inputs.
+2. Negative Testing: Test invalid inputs to ensure the system handles errors gracefully.
+3. Boundary Testing: Test limits of input fields (e.g., min/max length).
+4. Usability Testing: Check if the interface is user-friendly.
+5. Integration Testing: Check interaction between modules or systems.
+
+
