@@ -1,1 +1,76 @@
 
+1. What is Non-Functional Testing?
+Non-Functional Testing (NFT) verifies how well the software performs under various conditions. 
+Instead of checking “does the software do what it should” (functional), it checks how it does it.
+
+It covers aspects like:
+
+Performance
+Usability
+Reliability
+Security
+Scalability
+
+Think of it as the “quality attributes” of the system.
+
+2. Why is Non-Functional Testing Important?
+
+User Experience: Ensures the software is fast, responsive, and user-friendly.
+Reliability: Verifies the system can run continuously without failures.
+Security: Protects data and prevents vulnerabilities.
+Scalability: Confirms the software can handle growing users or data.
+Compliance: Meets industry standards and regulations.
+
+Failing NFT can cause user dissatisfaction, data breaches, crashes, or downtime — all costly issues.
+
+3. When & Where is Non-Functional Testing Done?
+
+Usually after functional testing and before release.
+During System Testing or Acceptance Testing phases.
+Can also be continuous in DevOps and CI/CD pipelines for performance monitoring.
+
+4. Types of Non-Functional Testing
+Here are the major types, what they mean, and why they matter:
+
+Type	                                Description	                                            Why Important?
+
+Performance Testing	          Checks speed, responsiveness, and stability under load	       To ensure fast and stable user experience
+Load Testing	                Tests software under expected user loads	                     To verify handling of normal usage
+Stress Testing	              Pushes software beyond normal limits to find breaking points	 To understand limits and failure points
+Scalability Testing	          Tests ability to scale up or down with user base	             To ensure growth won’t break software
+Security Testing	            Identifies vulnerabilities and weaknesses	                     To protect data and prevent attacks
+Usability Testing           	Evaluates user-friendliness and interface design	             To ensure easy and intuitive use
+Compatibility Testing	        Checks software on different devices, browsers, OS	           To ensure broad user accessibility
+Reliability Testing	          Ensures software runs without failure over time	               To guarantee uptime and stability
+Maintainability Testing	      Checks how easy it is to maintain and update software	         To reduce future costs and downtime
+Compliance Testing	          Validates adherence to standards and regulations	             To avoid legal and regulatory issues
+
+5. How to Perform Non-Functional Testing?
+Step 1: Identify Non-Functional Requirements (NFRs)
+Understand what qualities the software must have — often documented in SRS or NFR documents.
+
+Step 2: Plan Test Scenarios
+Create test scenarios to validate each non-functional attribute, e.g., “Check page loads under 2 seconds with 1000 users.”
+
+Step 3: Select Tools
+Pick appropriate tools based on the test type (more below).
+
+Step 4: Execute Tests
+Run tests in controlled environments simulating real-world conditions.
+
+Step 5: Analyze Results
+Compare metrics against benchmarks. Investigate failures or bottlenecks.
+
+Step 6: Report & Retest
+Log issues, fix, and retest to validate improvements.
+
+6. Common Tools for Non-Functional Testing
+
+Test Type	                          Popular Tools                        	Manual/Automation
+Performance/Load/Stress	       JMeter, LoadRunner, Gatling                   Automation
+Security	                     OWASP ZAP, Burp Suite, Nessus	          Manual & Automation
+Usability	                     UserTesting.com, Lookback                    Mostly Manual
+Compatibility	                 BrowserStack, Sauce Labs	                Automation/Manual Hybrid
+Reliability/Maintainability	   Custom monitoring & logging tools	        Mostly Automation
+
+***
