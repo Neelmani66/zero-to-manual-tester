@@ -1,0 +1,61 @@
+
+✅ What is SDLC (Software Development Life Cycle)?
+The Software Development Life Cycle is the overall process of developing software — from the initial idea to final deployment and maintenance.
+
+Think of it as the developer’s roadmap.
+
+🧱 Phases of SDLC:
+1. Requirement Gathering & Analysis
+Stakeholders, Product Owners gather business needs.
+Testers may get involved early to review requirements.
+
+2. System Design
+Architects/designers plan the software architecture.
+Testers understand design to plan edge cases.
+
+3. Implementation (Coding)
+Developers start writing code.
+Testers begin preparing test cases, test data.
+
+4. Testing
+Testers execute manual/automated tests.
+Report bugs, validate fixes.
+
+5. Deployment
+Code is released to production.
+
+6. Maintenance
+Fix production issues, handle updates.
+
+***
+
+🧪 What is STLC (Software Testing Life Cycle)?
+The Software Testing Life Cycle is the step-by-step process followed by testers to ensure the quality of the software.
+
+Think of it as the tester’s roadmap inside the larger SDLC.
+
+🧱 Phases of STLC:
+1. Requirement Analysis
+Review functional and non-functional requirements.
+Identify what needs to be tested.
+
+2. Test Planning
+Decide strategy, effort, tools, roles.
+Create Test Plan document.
+
+3. Test Case Design
+Write detailed test cases and scenarios.
+Use techniques like BVA, EP, etc.
+
+4. Test Environment Setup
+Ensure environment, tools, data are ready for execution.
+
+5. Test Execution
+Execute test cases manually or with tools.
+Log defects.
+
+6. Test Closure
+Create final test reports.
+Assess what went well, what didn’t.
+
+***
