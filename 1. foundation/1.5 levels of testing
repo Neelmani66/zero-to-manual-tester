@@ -1,0 +1,61 @@
+
+Testing is not done all at once.
+It’s performed in levels, each with a specific focus and purpose. 
+These levels help ensure that defects are caught early and thoroughly across all parts of the software.
+
+**
+
+🔹 1. Unit Testing (White Box - Done by Developers)
+
+Purpose: Test individual pieces of code (functions/methods)
+Who does it? Developers
+Tools (for reference): JUnit, NUnit, TestNG
+
+You don’t perform it as a manual tester, but it’s helpful to know when it happens in the SDLC.
+
+🔹 2. Integration Testing
+
+Purpose: Verify interactions between integrated modules or services
+Who performs it? Testers or developers
+Type: Can be white or black box depending on context
+
+✅ You might test:
+
+API interactions
+Data flow between frontend & backend
+Payment gateway integrations
+
+Example: Test if login service correctly connects to the user profile module.
+
+
+🔹 3. System Testing (Black Box – Done by Testers)
+
+Purpose: Validate the entire application as a whole
+What you test: End-to-end business workflows, all features
+This is where functional testing, non-functional testing, and regression happen.
+
+✅ You own this as a manual tester.
+
+Example: Testing the full signup → checkout → payment → order confirmation flow.
+
+🔹 4. Acceptance Testing
+
+Purpose: Ensure the software meets business needs
+Types:
+
+Alpha Testing: Done by internal team/client
+Beta Testing: Done by end users
+User Acceptance Testing (UAT) is often your concern — you may help prepare test cases or support business users.
+
+**
+
+🔄 Quick Summary Table
+
+Level                    	Who Performs                	Type                    	Goal
+
+Unit	                     Developer              	White box	Code       correctness (functions)
+Integration	             Tester/Developer	          Black/White	         Data flow between modules
+System	                    Tester	                Black box	           Full app validation
+Acceptance	             Business Users            	Black box          	 Business requirements validation
+
+***
