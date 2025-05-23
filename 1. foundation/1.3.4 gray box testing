@@ -1,1 +1,54 @@
 
+1. ✅ What is Gray Box Testing?
+
+Gray Box Testing is a hybrid approach that combines aspects of Black Box (external functionality) and White Box (internal code-level knowledge) testing.
+The tester has limited knowledge of the internal workings of the system.
+It’s like being a user with some developer insight (e.g., knowing database schema, architecture, or data flow).
+Common in integration testing, API testing, security testing, or when testers get access to internal documentation.
+
+2. 🔍 Why is Gray Box Testing Useful?
+
+Balances coverage and perspective: You get the external view of a user and internal awareness like a developer.
+Helps catch issues that black-box testing might miss, such as:
+Incorrect data flow
+Broken API integration
+Security holes
+Encourages better collaboration between devs and testers.
+
+3. 🎯 Who Performs It?
+
+Manual Testers with internal access
+QA Engineers with partial system access
+Security/Test Analysts doing API or integration validation
+
+4. 🧩 Where Is Gray Box Testing Used?
+
+Integration Testing between modules/systems
+Web Services & API Testing (with access to API contract/schema)
+Database Testing (understanding table structure, not full code)
+Security Testing
+Regression Testing with understanding of change impact
+
+5. ⚙️ Techniques Used in Gray Box Testing
+
+Technique                                	Description
+
+Matrix Testing	                Verifies the relationship between modules, data, and responsibilities.
+Regression Testing            	With internal knowledge of recent code changes.
+Pattern Testing	                Testing design patterns, common coding practices, or flow structures.
+Database Testing	              Validating data at backend (inserts, triggers, joins) with knowledge of schema.
+API Testing	                    Using tools like Postman or Swagger with access to request/response schema.
+
+6. 🧰 Tools Used in Gray Box Testing
+
+Tool	                                                              Use Case
+
+Postman / Insomnia	                                   API testing with internal API documentation
+SoapUI	                                               Web services testing
+Database Clients (DBeaver, SQL Developer)	             DB schema & backend testing
+Fiddler / Burp Suite	                                 Network-level insights for security testing
+Swagger	                                               API contracts/spec understanding
+Log Analyzers (Kibana, Logstash)	                     Internal behavior monitoring
+Browser Dev Tools	                                     Analyze internal network/API calls
+
+***
