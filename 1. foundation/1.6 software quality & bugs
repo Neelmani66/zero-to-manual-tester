@@ -4,3 +4,148 @@ What is Software Quality?
 Software quality is a measure of how well a software product fulfills its requirements and meets customer expectations. 
 It’s about delivering value by building software that is reliable, maintainable, efficient, and secure — not just functional.
 
+Dimensions of Software Quality (Quality Attributes)
+
+1. Functional Correctness
+
+Does the software do exactly what it’s supposed to do?
+Example: An e-commerce checkout should correctly calculate totals and taxes.
+How testers verify: By validating against requirements and business rules.
+
+2. Reliability
+
+How often does the software fail during operation?
+Measured by Mean Time Between Failures (MTBF).
+Example: A banking app that crashes often is unreliable.
+Testers run stress and load testing to check reliability.
+
+3. Usability
+
+How easy and intuitive is the software for users?
+Includes navigation, layout, error messages, and accessibility.
+Example: Complex enterprise software with poor UI can frustrate users.
+Usability tests and user feedback are key here.
+
+4. Performance
+
+How fast and responsive is the software?
+Measured by response time, throughput, resource consumption.
+Example: A search engine should return results within seconds.
+Performance testing tools and monitoring help verify this.
+
+5. Maintainability
+
+How easy is it to update, fix, or enhance the software?
+A modular, well-documented codebase helps maintainability.
+Example: Poorly written code makes bug fixes take longer.
+
+6. Security
+
+Is the software protected against unauthorized access and vulnerabilities?
+Includes data encryption, authentication, and input validation.
+Example: A healthcare app must secure patient records strictly.
+Security testing and audits identify weak points.
+
+7. Portability
+
+Can the software run on different platforms or environments?
+Example: Software that runs on Windows, Mac, Linux without issues.
+Compatibility testing checks this.
+
+**
+
+2. Importance of Software Quality
+
+- Cost Reduction:
+Fixing bugs early (during development or testing) costs significantly less than after release.
+For example, a bug caught in testing may cost $100 to fix, but if found after release, it could cost thousands.
+- Customer Satisfaction:
+High-quality software keeps users happy, reduces churn, and builds trust.
+- Reputation:
+Delivering reliable, secure software builds company credibility.
+- Regulatory Compliance:
+Certain industries (finance, healthcare) require strict quality and security standards.
+
+**
+
+3. Understanding Bugs (Defects)
+What is a Bug?
+A bug is any flaw in the software that causes it to produce incorrect or unexpected results, or to behave in unintended ways.
+
+Bug Examples:
+1. Functional Bug:
+"Login button does not respond when clicked."
+
+2. UI Bug:
+"Text overlapping on the homepage banner."
+
+3. Performance Bug:
+"App takes 30 seconds to load a simple page."
+
+4. Security Bug:
+"Password reset link can be guessed."
+
+5. Logic Bug:
+"Incorrect discount applied during checkout."
+
+Why Do Bugs Occur?
+
+Misunderstood requirements
+Coding errors (syntax, logic)
+Integration issues between modules
+Environment mismatches
+Insufficient testing
+
+**
+
+4. Types of Bugs: More Detailed
+
+Type	                         Description	                                            Example
+
+Functional	           Feature not working as per specs                      	Search returns wrong results
+Performance	           Slow or resource-heavy operations         	            High CPU usage causing lag
+Security	             Vulnerabilities that expose data or allow hacking	    SQL injection vulnerability
+UI (User Interface)	   Design/layout issues affecting usability	              Button misaligned or hidden
+Compatibility	         Issues running on certain devices or browsers	        Site looks broken on Safari
+Logic	                 Faulty business logic or calculations	                Incorrect tax calculation
+Integration	           Problems with data exchange between modules	          Payment module not sending data
+
+**
+
+5. Bug Life Cycle
+
+1. New — Bug is identified and logged in the bug tracking system (Jira, Bugzilla, etc.).
+2. Assigned — Assigned to developer/team to investigate.
+3. Open — Developer starts working on a fix.
+4. Fixed — Developer resolves the bug and marks it fixed.
+5. Retest — Tester verifies the fix by re-running the test cases.
+6. Closed — If fix is successful, bug is closed.
+7. Reopened — If bug still exists or reappears, it is reopened.
+
+**
+
+6. Bug Reporting Best Practices
+
+1. Clear Summary: One-line description of the bug.
+2. Detailed Steps to Reproduce: Step-by-step guide to recreate the bug.
+3. Expected vs Actual Result: What should happen vs what happened.
+4. Severity and Priority: How serious is the bug and how soon should it be fixed?
+5. Attachments: Screenshots, videos, logs to help developers understand the issue.
+
+**
+
+7. Relationship Between Software Quality and Testing
+
+Testing ensures that software quality attributes are met by identifying bugs and issues early.
+Testing is not just about finding bugs but also about verifying that the product is usable, reliable, and performant.
+
+**
+
+8. Real-World Example: Bug Impact
+
+Imagine a payment gateway that processes transactions.
+If there is a functional bug causing wrong amount deduction, it leads to financial loss and angry customers. 
+This directly hits software quality in functional correctness and reliability.
+
+***
+
