@@ -1,1 +1,42 @@
 
+Testing techniques help testers design effective test cases.
+These can be broadly categorized into:
+
+🧠 I. Black Box Techniques
+(Focus: Behavior of the system, not the code)
+
+Technique                                    	What It Does	                                                                                 Common Use Case
+Equivalence Partitioning (EP)     	Divides input data into valid/invalid groups (partitions) and tests one value from each.	       Login forms, numeric input fields.
+Boundary Value Analysis (BVA)     	Focuses on testing the edges (min/max) of input fields.	                                         Age, limits, price fields.
+Decision Table Testing	            Tests combinations of inputs and business rules.                            	                   Loan approval, discount logic, etc.
+State Transition Testing	          Tests how software behaves when moving from one state to another.	                               Login lockout, ATM flow.
+Error Guessing	                    Based on tester’s experience — guess common failures and test them.	                             Login, uploads, invalid formats, etc.
+
+⚙️ II. White Box Techniques
+(Focus: Internal logic/code structure — usually by developers)
+
+Technique	                                   Description
+Statement Coverage	                Every line of code should be executed at least once.
+Decision/Branch Coverage	          Every possible true/false decision outcome is tested.
+Condition Coverage	                All boolean conditions in a decision are tested independently.
+
+🩶 III. Gray Box Techniques
+(Focus: Combination — tester knows some internals)
+
+Matrix-based testing
+Database testing
+Session/state testing
+Used when testers know some business logic, database structure, or internal workflow.
+
+**
+
+🛠️ Choosing the Right Technique
+
+Project Type	                             Technique to Prioritize
+Form-based (Login, Register)	      EP, BVA, Error Guessing
+Workflow/State-dependent	          State Transition, Decision Table
+Business Rule-heavy	                Decision Table
+Critical Calculations	              BVA, EP
+API/Backend/Rules with Logic	      Statement & Branch Coverage (by Devs)
+
+***
