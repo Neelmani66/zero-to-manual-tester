@@ -1,0 +1,141 @@
+
+**
+🧩 Software Testing Life Cycle (STLC)
+The Software Testing Life Cycle (STLC) is a structured process that testers follow to ensure the quality of software throughout its development.
+While SDLC is the overall development lifecycle, STLC is tester-focused, describing all stages of testing from planning to closure.
+
+🌀 STLC Phases Overview
+There are 6 core phases in the STLC:
+
+Phase No.	            Phase Name	                                Purpose
+1️⃣	                Requirement Analysis	                 Understand “what” to test
+2️⃣	                Test Planning	                         Decide “how” to test
+3️⃣	                Test Case Design	                     Prepare test cases & test data
+4️⃣	                Test Environment Setup	               Prepare testing infrastructure
+5️⃣	                Test Execution	                       Run test cases and log bugs
+6️⃣	                Test Closure	                         Final reporting and evaluation
+
+🔍 1. Requirement Analysis
+🎯 Objective:
+Understand what features and functionalities need to be tested.
+
+✅ Activities:
+Read Business Requirement Documents (BRD), Functional Requirements (FRS), and Use Cases.
+Clarify doubts with the BA or Product Owner.
+Identify testable and non-testable requirements.
+Perform feasibility analysis.
+
+📌 Entry Criteria:
+BRD/FRS is available.
+Access to stakeholders for clarifications.
+
+📦 Deliverables:
+Requirement Traceability Matrix (RTM)
+Automation feasibility report (if applicable)
+**
+📋 2. Test Planning
+🎯 Objective:
+Define the scope, strategy, resources, schedule, and objectives of testing.
+
+✅ Activities:
+Estimate effort, time, and cost.
+Define test strategy (manual vs automation).
+Assign roles and responsibilities.
+Define tools to be used (e.g., bug trackers, test case tools).
+
+📌 Entry Criteria:
+Requirements are analyzed and confirmed.
+
+📦 Deliverables:
+Test Plan Document
+Risk analysis
+Resource plan
+**
+🛠️ 3. Test Case Design (Test Design / Test Development)
+🎯 Objective:
+Write detailed test cases that will validate the application.
+
+✅ Activities:
+Write test cases and test scenarios.
+Identify test data and prepare it.
+Review and get test cases approved.
+Ensure traceability to requirements.
+
+📌 Entry Criteria:
+Approved Test Plan
+Finalized RTM
+
+📦 Deliverables:
+Test Cases
+Test Data
+Updated RTM
+**
+🌐 4. Test Environment Setup
+🎯 Objective:
+Prepare the infrastructure where testing will be executed.
+
+✅ Activities:
+Set up software/hardware/network environment.
+Install test tools, databases, application builds.
+Ensure correct test data is loaded.
+Perform smoke testing.
+
+📌 Entry Criteria:
+Application build is available
+Test plan & test cases are ready
+
+📦 Deliverables:
+Test Environment configured
+Smoke Test Results
+**
+▶️ 5. Test Execution
+🎯 Objective:
+Run the test cases and log bugs if any are found.
+
+✅ Activities:
+Execute test cases (manually or via automation).
+Mark test cases as Pass/Fail/Blocked
+Log defects in a bug tracking tool (e.g., Jira).
+
+Retest and perform regression testing.
+
+📌 Entry Criteria:
+Test Environment is ready
+
+Approved test cases & test data available
+
+📦 Deliverables:
+Test Execution Reports
+Defect Reports
+Updated RTM
+**
+📊 6. Test Closure
+🎯 Objective:
+Wrap up testing activities and analyze the outcome.
+
+✅ Activities:
+Final reporting: metrics like bug count, severity, coverage.
+Prepare Test Summary Report.
+Lessons learned and best practices.
+Close defect tickets and test environment.
+
+📌 Entry Criteria:
+All test cases executed
+All critical defects fixed and verified
+
+📦 Deliverables:
+Test Summary Report
+Metrics Report
+Lessons Learned Document
+***
+
+🧠 Why STLC Is Important for a Manual Tester?
+Helps you work in a structured and organized manner.
+Gives visibility into where you are in the testing process.
+Reduces the risk of missing test scenarios.
+Essential for process maturity and working in teams.
+***
+
+
+
+
