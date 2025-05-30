@@ -1,1 +1,204 @@
+**
+✅ 1. Equivalence Partitioning (EP)
+Divide input data into partitions where data behaves the same, then test one value from each.
 
+🔹 Why Use It?
+Reduces number of test cases without missing bugs.
+Helps ensure coverage of valid and invalid ranges.
+
+🔹 Example:
+Imagine a form that accepts age between 18 to 60.
+
+Partition Type	           Input Range	             Sample Value	         Expectation
+Valid	                       18–60	                     30	                Accepted
+Invalid Low	                 <18	                       17	                Rejected
+Invalid High	               >60	                       65	                Rejected
+
+Instead of testing every number, you test just one from each group.
+🛠️ Tip:
+Use this technique when there are input fields with ranges, formats, or allowed values (like age, dropdowns, checkboxes, salary, etc.)
+**
+✅ 2. Boundary Value Analysis (BVA)
+Focuses on boundary edges, because bugs often occur at extreme limits.
+
+🔹 Why Use It?
+Boundaries are error-prone.
+Complements EP.
+
+🔹 Example:
+Same field – age between 18 to 60.
+
+Case Type	                  Test Value	               Expected Result
+Below Minimum	                 17                          	Fail
+Minimum	                       18	                          Pass
+Just Above Min	               19	                          Pass
+Just Below Max	               59	                          Pass
+Maximum	                       60	                          Pass
+Above Maximum                	 61	                          Fail
+
+You always test values at and around the boundaries: min-1, min, min+1 and max-1, max, max+1.
+🛠️ Tip:
+Use BVA with EP for complete test design of numeric or length-based input fields.
+**
+✅ 3. Decision Table Testing
+Creates test cases from combinations of inputs/conditions using a structured table.
+
+🔹 Why Use It?
+Ensures coverage of complex business rules.
+Prevents missing scenarios when conditions interact.
+
+🔹 Example:
+Business Rule:
+A user can get a discount if:
+
+They are a member.
+
+Purchase amount is above ₹1000.
+
+Member	               Amount > ₹1000                  	Discount Given?
+No	                       No	                               No
+No	                       Yes	                             No
+Yes	                       No	                               No
+Yes	                       Yes	                         ✅ Yes
+
+Each row is a test case.
+🛠️ Tip:
+Use this when testing login conditions, access rights, pricing logic, workflows, etc.
+**
+✅ 4. State Transition Testing
+Tests how the system changes states based on inputs/events.
+
+🔹 Why Use It?
+Useful for workflow-based features, like logins, transactions, ATMs, order processing, etc.
+Finds incorrect transitions, like skipping states or invalid jumps.
+
+🔹 Example:
+ATM PIN Entry Logic:
+
+After 3 wrong attempts → card is blocked.
+
+Current State	                 Input	                Next State
+Start	                       Wrong PIN 1	               Try 1
+Try 1	                       Wrong PIN 2	               Try 2
+Try 2	                       Wrong PIN 3	           Card Blocked
+Any State	                   Correct PIN	             Logged In
+
+You draw a State Diagram or table and ensure all transitions are tested.
+🛠️ Tip:
+Use when feature has multiple states or status changes (e.g., login, order status, session expiry, form submission stages, etc.)
+**
+✅ 5. Error Guessing
+Based on experience, guess areas where bugs are likely and test them.
+
+🔹 Why Use It?
+Catches bugs others miss.
+Useful when specs are incomplete or unclear.
+
+🔹 Examples:
+Leaving fields blank.
+Uploading wrong file format.
+Typing long strings in name/email fields.
+SQL injection attempt.
+Using browser back button after logout.
+
+🛠️ Tip:
+This comes with practice, but even as a fresher, start building your “error instinct” by thinking:
+1. What if I break it this way?
+2. What if I misuse this feature?
+***
+
+🔍 Example 1: Online Form – Password Field Validation
+Scenario:
+User must set a password during signup. Requirements:
+Length: 8–16 characters
+Must include at least one uppercase, one number, and one special character (@, #, $)
+Cannot be same as username
+
+✅ Equivalence Partitioning (EP)
+Partition Type                        	Sample Value	              Expected Result
+Valid Length + Valid Format	             Test@1234	                     Pass
+Invalid Length (<8)	                        T@1	                         Fail
+Invalid Length (>16)	               Test@1234567890123	                 Fail
+Missing Uppercase	                      test@1234	                       Fail
+Missing Special Char	                  Test1234	                       Fail
+
+✅ Equivalence Partitioning (EP)
+Partition Type	                        Sample Value	              Expected Result
+Valid Length + Valid Format	            Test@1234	                       Pass
+Invalid Length (<8)	                       T@1	                         Fail
+Invalid Length (>16)	                Test@1234567890123	               Fail
+Missing Uppercase	                      test@1234	                       Fail
+Missing Special Char	                  Test1234	                       Fail
+
+✅ Decision Table Testing
+Has Uppercase          	Has Number	        Has Special Char	      Length 8-16	      Valid?
+      No	                 Yes	                Yes	                   Yes	            ❌
+      Yes	                 No	                  Yes	                   Yes	            ❌
+      Yes	                 Yes	                No	                   Yes	            ❌
+      Yes	                 Yes	                Yes	                   No	              ❌
+      Yes	                 Yes	                Yes	                   Yes	            ✅
+
+✅ State Transition Testing
+States:
+
+Start → Typing → Valid Password → Submit
+Invalid Format → Show error → Typing → Valid → Submit
+
+Current State	                   Input	                  Next State
+Start	                          Test123	                 Invalid Format
+Invalid Format	                Test@1234	               Valid Password
+Valid	                          Click Submit	           Account Created
+
+✅ Error Guessing
+Entering password = username → should fail
+All special characters only → fail
+Password with white spaces → fail
+Copy-paste from clipboard? (may need validation)
+
+***
+🔍 Example 2: Shopping Cart – Apply Coupon Code
+Scenario:
+Coupon is valid only when:
+Order total ≥ ₹500
+Coupon is not expired
+Only 1 coupon per order
+Cannot be used with other offers
+
+✅ Equivalence Partitioning (EP)
+Partition Type	             Order Total	          Coupon Valid	           Expected
+Valid	                         ₹600	                   Yes	                 Success
+Invalid Total	                 ₹400	                   Yes	                 Fail
+Expired Coupon	               ₹600	                   No	                   Fail
+Multiple Coupons	             ₹700	                2 Coupons	               Fail
+
+✅ Boundary Value Analysis (BVA)
+Total Amount              	Expected
+₹499	                       Fail
+₹500 (Min)	                 Pass
+₹501	                       Pass
+
+✅ Decision Table
+Total ≥ ₹500	       Coupon Valid	        Another Offer Used	        Apply Success?
+     No	                 Yes	                   No	                        ❌
+    Yes	                 No	                     No	                        ❌
+    Yes	                 Yes	                   Yes	                      ❌
+    Yes	                 Yes	                   No	                        ✅
+
+✅ State Transition
+States:
+
+No Coupon → Enter Code → Check Valid → Applied → Discount
+
+Current State	                   Event	                  Next State
+No Coupon	                     Enter Code	                Validating
+Validating	                   Valid Code	                Applied
+Applied	                       Remove Coupon	            No Coupon
+Validating	                   Expired Code	              Error
+
+✅ Error Guessing
+Entering same coupon twice → should fail
+Adding item after applying coupon → Recalculate?
+Removing item → total drops below ₹500 → auto-remove coupon?
+Enter lowercase instead of uppercase → case-sensitivity?
+
+***
