@@ -1,1 +1,61 @@
 
+🧩 What Is a Test Case?
+A test case is a set of conditions or steps used to verify a specific function or feature of the software works as expected.
+
+Each test case has:
+1. What to test
+2. How to test it
+3. What the expected result is
+
+🎯 Why Are Test Cases Important?
+Standardizes testing – ensures repeatable, consistent testing
+Traceability – links back to requirements (via traceability matrix)
+Better collaboration – devs, testers, and BAs can understand the scenario
+Essential for regression – can be reused again and again
+
+🏗️ Anatomy of a Test Case
+
+Field                            	Description
+Test Case ID	                  Unique identifier (e.g., TC_Login_001)
+Title/Description	              What is being tested
+Preconditions	                  Any setup needed before test
+Test Steps	                    Detailed steps to execute
+Test Data	                      Input values
+Expected Result	                What should happen
+Actual Result	                  Filled after execution
+Status	                        Pass / Fail
+Comments	                      Notes, screenshots, defects
+
+**
+✍️ Sample Test Case: Login Functionality
+
+Field                           	Value
+Test Case ID	                 TC_Login_001
+Title	                         Valid Login with correct username/password
+Preconditions	                 User must be registered
+Test Steps	                   1. Go to Login Page
+                               2. Enter valid credentials
+                               3. Click Login
+Test Data        	             Email: user@example.com
+                               Password: Test@123
+Expected Result	               User should be redirected to the dashboard
+Actual Result	                 [To be filled after execution]
+Status	                       [Pass/Fail]
+Comments	                     Attach screenshot if failed
+
+**
+🧪 Types of Test Cases You Might Write
+
+Type	                           Description
+Positive	                     Valid data / expected user behavior
+Negative	                     Invalid data / unexpected usage
+UI/UX	                         Visual alignment, label checks
+Functional	                   Feature working as per requirement
+Boundary/Edge Cases	           Min/max inputs
+Integration	                   Module interaction (Login → Dashboard)
+
+***
+🗂️ Write and manage test cases in:
+
+Google Sheets / Excel (best for practice & fresher roles)
+****
