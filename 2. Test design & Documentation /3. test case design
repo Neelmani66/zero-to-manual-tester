@@ -1,0 +1,57 @@
+
+**
+✅ 1. What Is Test Case Design?
+Definition:
+It is the process of designing detailed step-by-step instructions to validate whether a specific feature or function of the software works as intended — based on requirements or user stories.
+
+Why It Matters:
+
+Improves coverage
+Reduces duplicate work
+Makes defects easier to trace
+Helps new testers understand the app quickly
+
+✅ 2. Qualities of a Good Test Case
+Every test case should be:
+
+Quality	                                              Explanation
+✅ Clear & Concise	                          No vague steps or outcomes
+✅ Reproducible	                              Anyone can follow and get same result
+✅ Traceable	                                Linked to a requirement or story
+✅ Cover Edge                                 Cases	Think beyond normal use
+✅ Maintainable	                              Easy to update when feature changes
+✅ Unique	                                    No duplicate steps or cases
+
+✅ 3. Types of Test Cases
+Type	                                                Purpose
+🔹 Positive	                                  Confirms feature works as expected
+🔹 Negative	                                  Confirms app handles invalid input properly
+🔹 Edge                                      Cases	Tests boundary values or limits
+🔹 UI Test                                   Cases	Focus on layout, labels, elements
+🔹 Integration	                             Interaction between modules (ex: Login + OTP)
+🔹 Regression	                               To ensure new changes didn’t break old features
+🔹 Exploratory	                             Freestyle, without predefined steps
+
+✅ 4. Test Case Design Techniques (Black Box Based)
+These are methods to help design efficient and high coverage test cases:
+
+Technique	                               Description	                                         Example
+1. Equivalence Partitioning	        Divide input into valid and invalid groups	      Age field: Valid = 18–60, Invalid = <18 or >60
+2. Boundary Value Analysis	        Test edges of input ranges	                      Test 17, 18, 60, 61
+3. Decision Table Testing	          Use tables for combinations of conditions	        Login: Blank email, blank pwd, both filled, etc.
+4. State Transition Testing	        Focus on state changes	                          ATM: Card Inserted → PIN Entered → Balance Shown
+5. Error Guessing	                  Based on experience/common mistakes	              Leaving email field blank or using wrong format
+6. Use Case Testing	                End-to-end scenarios based on real user flows	    E-commerce checkout
+
+✅ 5. Test Case Format – Template You Can Use
+Field	                                 Description
+Test Case ID	                      Unique ID (e.g., TC_Login_001)
+Title	                              What is being tested (e.g., Valid Login)
+Preconditions	                      What must exist before testing (e.g., User is registered)
+Test Steps	                        Step-by-step instructions
+Test Data	                          Inputs (e.g., email, password)
+Expected Result	                    What should happen
+Actual Result	                      Filled during execution
+Status	                            Pass/Fail
+Remarks	                            Notes or defects
+
