@@ -1,1 +1,110 @@
 
+**
+🧪 TEST CASE DESIGN TECHNIQUES — COMPLETE & PRACTICAL GUIDE
+We’ll cover the 6 major Black-Box techniques .
+
+✅ 1. Equivalence Partitioning (EP)
+📘 What is it?
+Divide input data into valid and invalid partitions — pick 1 value from each partition to reduce redundancy.
+
+💡 Example:
+Field: Age input
+Valid: 18–60
+Invalid: <18 and >60
+
+Partition Type	    Test Value
+Valid                	25
+Invalid             	17
+Invalid             	61
+
+🎯 Use Case:
+Useful when you have range inputs, dropdowns, or field validations (age, zip code, salary, etc.)
+
+✅ 2. Boundary Value Analysis (BVA)
+📘 What is it?
+Focus on the edges or boundaries of valid/invalid inputs.
+
+70% of bugs occur at the boundaries.
+
+💡 Example:
+Field: Age allowed 18–60
+
+Test                       Type	Value
+Below boundary	              17
+On lower boundary	            18
+Within range	                30
+On upper boundary	            60
+Above boundary	              61
+
+🎯 Use Case:
+When input is numerical or has limits — forms, sliders, date ranges, file size checks.
+
+✅ 3. Decision Table Testing
+📘 What is it?
+Use a table format to test combinations of conditions and the expected actions.
+Good for systems with rules, conditions, and logic.
+
+💡 Example: Login System
+Conditions:
+
+C1: Is email filled?
+C2: Is password filled?
+
+C1 (Email)	              C2 (Password)            	Action
+Yes	                      Yes	                      Allow Login
+Yes	                      No	                      Error: Password
+No	                      Yes	                      Error: Email
+No	                      No	                      Error: Both fields
+
+🎯 Use Case:
+Validation forms
+Rule-based systems (banking, insurance)
+Any “IF → THEN” type logic
+
+✅ 4. State Transition Testing
+📘 What is it?
+Test based on different states the software goes through — like status changes, user actions, system responses.
+Think “What happens after this step?”
+
+💡 Example: ATM
+Current State	                     Action	                   New State
+Idle	                           Insert Card	             Card Inserted
+Card Inserted                    Enter PIN	               PIN Verified
+PIN Verified	                   Click Withdraw	           Cash Dispensed
+Card Inserted	                   Wrong PIN (3x)	           Card Blocked
+
+🎯 Use Case:
+Login flows
+Shopping cart
+Ticket booking
+Multi-step forms
+
+✅ 5. Error Guessing
+📘 What is it?
+Use your experience and intuition to “guess” areas where bugs might be hidden.
+No fixed rules. Based on what often fails.
+
+💡 Example: Login Page
+Input special characters in username
+Enter spaces only
+Use expired credentials
+Enter password with 256 characters
+Check browser “Back” button after logout
+
+🎯 Use Case:
+When testing mature products
+During exploratory testing
+After learning from past bugs
+
+✅ 6. Use Case Testing
+📘 What is it?
+Test real user scenarios end-to-end. Often derived from User Stories or Business Requirements.
+
+💡 Example: E-Commerce Checkout
+Scenario: Add item → Apply coupon → Pay via UPI → Receive order confirmation
+
+🎯 Use Case:
+Story-based flows
+Functional E2E validation
+Acceptance testing
+***
