@@ -1,1 +1,26 @@
 
+**
+ Traceability Matrix (RTM)
+✅ What is it?
+A Requirement Traceability Matrix (RTM) is a document that links each requirement to its corresponding test cases to ensure:
+Everything is tested
+No missing or unverified functionality
+Easy tracking of coverage
+
+📋 Sample RTM Table:
+
+Requirement ID	     Requirement Description	             Test Case ID(s)	      Status
+REQ-01	           User must be able to login	             TC-01, TC-02	           Pass
+REQ-02	           Forgot password flow	                   TC-03, TC-04	           Fail
+REQ-03	           Cart should update item quantity	       TC-05, TC-06	           Pass
+
+🎯 Why It Matters:
+Ensures 100% coverage
+Helps identify untested requirements
+Useful in audits and reviews
+Acts as a proof of quality to stakeholders
+
+💼 Real-Life Usage:
+Often created in Excel or tools like Jira, TestRail, Zephyr
+During UAT (User Acceptance Testing), RTM is shown to clients
+***
