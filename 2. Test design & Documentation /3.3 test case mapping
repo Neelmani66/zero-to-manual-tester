@@ -1,0 +1,58 @@
+
+**
+🔍 1. Mapping Test Cases to Requirements (via RTM)
+This is the most common mapping and already introduced via the Requirement Traceability Matrix (RTM).
+Each requirement ID must have at least one associated test case
+One test case may map to multiple requirements (if they are related)
+
+🔧 Use Case: You’re asked “Is REQ-03 tested?”
+✅ Use the RTM to find test cases TC-05, TC-06 mapped to REQ-03.
+
+🧩 2. Mapping Test Cases to Modules or Features
+Used when organizing test cases by application modules
+
+Helps in modular test planning and coverage analysis
+
+📋 Example:
+
+Module Name	               Test Case ID	               Description
+Login	                     TC-01, TC-02	           Valid/Invalid login
+Cart Management	           TC-03, TC-04	           Add, remove, update cart items
+Payment Gateway	           TC-05 – TC-08	         Card payments, wallet payments, failures
+
+🧠 Why it matters: When a developer makes a change in the “Cart” module, you instantly know which test cases to rerun.
+
+📱 3. Mapping Test Cases to User Scenarios or Use Cases
+This is used especially in:
+
+UAT
+End-to-End Testing
+Real user workflows
+
+📋 Example:
+
+Use Case / Scenario ID	          Description	                        Test Case IDs
+UC-101	                  Place an order as a guest user	            TC-01 → TC-07
+UC-102	                  Apply a coupon at checkout	                TC-08, TC-09
+UC-103	                  Cancel order from order history	            TC-10, TC-11
+
+🌟 This is very useful for high-level flow testing or business logic validation.
+
+📱 3. Mapping Test Cases to User Scenarios or Use Cases
+This is used especially in:
+
+UAT
+
+End-to-End Testing
+
+Real user workflows
+
+📋 Example:
+
+Use Case / Scenario ID	         Description	                           Test Case IDs
+UC-101	                 Place an order as a guest user	                TC-01 → TC-07
+UC-102	                 Apply a coupon at checkout	                    TC-08, TC-09
+UC-103	                 Cancel order from order history	              TC-10, TC-11
+
+🌟 This is very useful for high-level flow testing or business logic validation.
+***
