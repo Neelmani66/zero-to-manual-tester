@@ -1,0 +1,71 @@
+
+**
+🐞 Defect Lifecycle in Software Testing
+🔍 What is a Defect?
+A defect (also known as a bug, fault, or issue) is a deviation from the expected behavior in a software application. 
+If a tester finds that the software is not behaving as per requirements, it is reported as a defect.
+
+🔁 Defect Lifecycle (Bug Life Cycle)
+The Defect Lifecycle defines the journey of a defect from its discovery to its closure.
+Each defect passes through various states before being resolved.
+
+New → Assigned → Open → Fixed → Retest → Verified → Closed  
+                        ↓
+                    Rejected / Deferred / Duplicate / Not a Bug
+
+🔄 Defect Lifecycle Stages 
+
+State	                              Explanation
+New	                            Tester logs the defect. Awaiting triage.
+Assigned	                      Test Lead/Manager assigns it to a Developer.
+Open	                          Developer starts analyzing and fixing the defect.
+Fixed	                          Developer claims the bug is fixed and ready for retest.
+Retest	                        Tester verifies the fix by re-running the test.
+Verified	                      Tester confirms the defect is resolved.
+Closed	                        Defect is fully resolved and closed by tester.
+Reopened	                      Bug is still reproducible after fix. Sent back to developer.
+Rejected	                      Developer rejects the defect (e.g., not valid).
+Deferred	                      Valid bug, but fix is postponed to future release.
+Duplicate                      	Defect has already been reported.
+Not a Bug          	            Working as per design or misunderstood requirement.
+
+🧭 Roles in the Defect Lifecycle
+Role	                             Responsibility
+Tester	                        Identifies, logs, retests, and closes bugs.
+Test Lead/Manager 	            Reviews bugs, assigns priority/severity.
+Developer	                      Fixes the bugs and updates status.
+Project Manager/Product         Owner	May defer bugs or decide priority.
+
+🔥 Severity vs Priority
+                              Severity	                                      Priority
+Definition	      Impact of the defect on the system	                  Urgency to fix the defect
+Set By	          Tester	                                              Project Manager/Lead
+Example	          App crashes on login = High Severity	                Bug in footer = Low Severity, High Priority during UI freeze
+
+📦 Defect Report Template
+Here’s what a detailed defect log typically includes:
+
+Field	                           Example
+ID	                             BUG-102
+Summary	                         App crashes when logging in with correct credentials
+Steps to Reproduce	
+                                 1. Open app
+                                 2. Enter correct login
+                                 3. Click Login
+Expected Result      	           User should log in successfully
+Actual Result	                   App crashes with error
+Environment	                     Android 12, App v3.2.0
+Severity	                       Critical
+Priority	                       High
+Attachments	                     Screenshot, logs, video
+Status	                         New
+Reported By	                     Tester’s Name
+Assigned To	                     Developer’s Name
+
+📌 Defect Logging Best Practices
+Write clear, concise summaries and steps.
+Always attach logs/screenshots/videos if possible.
+Don’t raise duplicate bugs—search first.
+Log defects as soon as discovered.
+Use neutral and objective language in defect descriptions.
+***
