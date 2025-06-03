@@ -1,1 +1,138 @@
 
+**
+🧭 1. Test Plan Definition
+A Test Plan is a formal document derived from requirement documents and project plans. 
+
+It outlines:
+The testing strategy
+Resources, schedules, scope, and objectives
+Risks, deliverables, environment setup, and entry/exit criteria
+
+📌 Goal: To communicate clearly what will be tested, why, when, how, and by whom.
+
+📚 2. When Is It Created?
+Typically at the start of a testing phase (after requirements are clear)
+Even in Agile, a mini test plan or strategy is built for each sprint or release
+**
+
+🔍 3. Complete Test Plan Template :
+
+✅ 1. Test Plan ID
+Unique identifier. Example: TP-Ecomm-Web-V1.0
+
+✅ 2. Introduction
+Brief about the system under test (SUT)
+Describe the application (e.g., E-commerce website, Banking App)
+Example:
+This Test Plan describes the strategy for testing the "User Authentication & Checkout Module" in the ABC E-commerce Web Application.
+
+✅ 3. Objectives and Tasks
+Objectives: Ensure login, registration, cart, and checkout work per business rules
+
+Tasks:
+Test environment setup
+Write & review test cases
+Execute manual test cases
+Log & track defects
+Re-testing & regression testing
+Sprint test report submission
+
+
+✅ 4. Scope of Testing
+
+In-Scope:
+User registration, login/logout
+Product search & filtering
+Cart operations (add/remove)
+Checkout with payment gateway
+
+Out-of-Scope:
+Admin panel features
+Analytics dashboard
+Mobile app version
+
+🧠 Why it's needed: So teams don’t waste time testing modules they’re not responsible for in this cycle.
+
+✅ 5. Test Strategy / Test Approach
+How will the testing be done?
+
+Type of Testing:
+
+Functional Testing
+UI Testing
+Smoke & Regression Testing
+Negative Testing
+
+Manual Testing: All test cases will be executed manually.
+Test Case Design: Based on BRS, SRS, and User Stories.
+Environment: Web staging environment with test data.
+
+
+✅ 6. Test Deliverables
+What documents or artifacts will be delivered:
+
+Test Plan document
+Test Scenarios & Cases
+Bug Reports
+Test Summary Report (TSR)
+Daily Execution Reports (if needed)
+Screenshots/videos of failures
+
+✅ 7. Testing Schedule
+Phase	                         Start Date	                 End Date
+Test Planning	                   Jun 1	                    Jun 2
+Test Case Writing	               Jun 3	                    Jun 5
+Environment Setup	               Jun 4	                    Jun 4
+Test Execution	                 Jun 6	                    Jun 12
+Bug Reporting & Re-test	         Jun 6	                    Jun 13
+Final Report	                   Jun 14	                    Jun 14
+
+This is adjusted to sprint/release cycles.
+
+✅ 8. Resource Planning
+Name	             Role
+Rahul	         QA Engineer
+Ayesha	       QA Lead
+Dev Team	     For defect fixing
+
+✅ 9. Test Environment Details
+
+URL:  # https://staging.abcecomm.com
+Browsers: Chrome, Firefox, Edge (latest versions)
+Test Data: Dummy user accounts, product inventory, payment cards (mocked)
+
+Dependencies:
+API stubs for payment
+Dummy user base with login roles
+
+✅ 10. Entry Criteria
+
+Conditions to start testing:
+Functional build deployed to staging
+Smoke test passed
+Test cases written & reviewed
+Required test data is ready
+
+✅ 11. Exit Criteria
+
+When to stop testing:
+All P1/P2 bugs fixed and retested
+95–100% test case execution
+No blocker bugs
+Test summary sent & signed off
+
+✅ 12. Risks & Mitigation Plan
+
+Risk	                                  Mitigation Plan
+
+Delay in build deployment	           Inform dev team in daily standups
+Test data corruption	               Keep data backup or scripts to recreate
+Environment unstable	               Coordinate with DevOps or IT team
+Requirement changes mid-sprint	     Keep test cases modular for flexibility
+One tester falling sick          	   Backup tester available if needed
+
+✅ 13. Approval
+Name	                 Role	               Signature
+QA Lead	            Test Owner	              ✅
+Project Manager	    Approver	                ✅
+**
