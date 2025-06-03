@@ -1,1 +1,50 @@
 
+**
+Common Mistakes in Test Case Design :
+
+🚫 1. Writing vague test steps
+❌ "Enter name and submit"
+
+✅ "Enter a valid name in the Name field (e.g., John), then click the Submit button"
+
+🚫 2. No expected result
+❌ Test steps without knowing what to expect = pointless.
+
+🚫 3. Too much in one test case
+Keep it simple and atomic.
+
+✅ One scenario = one test case
+
+🚫 4. Not using design techniques
+Leads to poor coverage and redundant test cases
+
+🚫 5. Not considering negative tests
+Always test both valid and invalid inputs
+
+✅ Tip: Use a checklist when reviewing:
+Clarity
+Expected Result
+Positive + Negative
+Mapping to requirement
+Design technique used?
+** 
+
+ How to Review Test Cases :
+
+🎯 Goals of Review:
+Improve quality of test cases
+Remove duplicates, errors, missing logic
+Catch poor assumptions
+
+🔍 Review Checklist:
+Aspect	              Check For
+Clarity	              Is it easy for anyone to understand?
+Coverage	            Are both positive & negative flows covered?
+Design Techniques     Used	EP, BVA, State transitions, etc.
+Data Preparation	    Are test data needs clearly mentioned?
+Expected Result	      Is it specific and verifiable?
+Requirement Mapping	  Is there a clear link to a requirement or user story?
+Reusability	          Can steps be reused in other test cases or automated scripts?
+Duplicates/Conflicts	Is the same scenario covered twice? Are there logical conflicts?
+***
+
