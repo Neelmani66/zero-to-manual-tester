@@ -26,8 +26,8 @@ This repo is divided into logical modules:
 |----------------------|--------------------------------------------------|
 | `1_foundation/`      | Core testing concepts like SDLC, STLC, basics    |
 | `2_test_artifacts/`  | Test case writing, bug life cycle, test plans    |
-| `3_tools/`           | JIRA, TestLink, Postman basics                   |
-| `4_agile_knowledge/` | Agile, Scrum, SAFe, and certification notes      |
+| `3_tools/`           | JIRA,                                            |
+| `4_agile_knowledge/` | Agile, Scrum, SAFe,                              |
 
 ---
 
