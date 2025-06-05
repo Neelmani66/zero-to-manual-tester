@@ -12,9 +12,8 @@ To become a **skilled and job-ready Manual Tester** with:
 
 - Strong understanding of software testing foundations.
 - Hands-on experience with test case design, bug reporting, and QA tools.
-- Knowledge of Agile/Scrum practices.
+- Knowledge of Agile/Scrum.
 - Real-world testing examples.
-- A GitHub portfolio to demonstrate my skills.
 
 ---
 
@@ -26,8 +25,7 @@ This repo is divided into logical modules:
 |----------------------|--------------------------------------------------|
 | `1_foundation/`      | Core testing concepts like SDLC, STLC, basics    |
 | `2_test_artifacts/`  | Test case writing, bug life cycle, test plans    |
-| `3_tools/`           | JIRA,                                            |
-| `4_agile_knowledge/` | Agile, Scrum, SAFe,                              |
+| `3_agile_knowledge/` | Agile, Scrum, SAFe,                              |
 
 ---
 
@@ -45,17 +43,13 @@ This repo is divided into logical modules:
 - Agile / Scrum / SAFe  
 - Test Case Design  
 - Bug Reporting  
-- JIRA (for issue tracking)  
-- Postman (API Testing Basics)  
-- Git & GitHub  
 
 ---
 
 ## 📌 Status
 
 - ✅ Testing Basics: Done
-- ⏳ Real-world project simulation: Coming soon  
-- 🔜 Tool-based learning (JIRA/Postman): Planned
+- ✅ Testing Intermediate: Done 
 
 ---
 
