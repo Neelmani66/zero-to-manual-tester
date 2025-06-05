@@ -26,11 +26,8 @@ This repo is divided into logical modules:
 |----------------------|--------------------------------------------------|
 | `1_foundation/`      | Core testing concepts like SDLC, STLC, basics    |
 | `2_test_artifacts/`  | Test case writing, bug life cycle, test plans    |
-| `3_real_world_skills/` | Real app testing, bug reports, test design     |
-| `4_tools/`           | JIRA, TestLink, Postman basics                   |
-| `5_agile_knowledge/` | Agile, Scrum, SAFe, and certification notes      |
-| `6_interview_prep/`  | QA interview Q&A, resume tips, glossary          |
-| `resources/`         | Notes, links, course resources                   |
+| `3_tools/`           | JIRA, TestLink, Postman basics                   |
+| `4_agile_knowledge/` | Agile, Scrum, SAFe, and certification notes      |
 
 ---
 
@@ -56,8 +53,7 @@ This repo is divided into logical modules:
 
 ## 📌 Status
 
-- ✅ Testing Basics: In process
-- 🔄 Agile Certification: Coming soon  
+- ✅ Testing Basics: Done
 - ⏳ Real-world project simulation: Coming soon  
 - 🔜 Tool-based learning (JIRA/Postman): Planned
 
