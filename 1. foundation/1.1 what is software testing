@@ -7,12 +7,13 @@ It verifies that the application behaves as expected, functions properly under v
 Testing is checking if the software works correctly and safely before it reaches the user.
 
 🎯 Goals of Software Testing
-Goal                                          	What it Means
-✅ Verification                         	Does the software meet the requirements?
-🐞 Bug Detection	                        Are there any unexpected behaviors or issues?
-🔒 Reliability & Security	                Is the system safe, stable, and secure?
-🚀 Performance                           Check	Does the app handle load, stress, and data volume well?
-👤 User Satisfaction	                    Will the end-user experience be smooth and intuitive?
+|Goal                                |        	What it Means                                        |    
+|----------------------------------------------------------------------------------------------------|
+|✅ Verification                     |   Does the software meet the requirements?                    |                     
+|🐞 Bug Detection                    |	Are there any unexpected behaviors or issues?                |                 
+|🔒 Reliability & Security           |	 Is the system safe, stable, and secure?                     |                   
+|🚀 Performance                      |  Check	Does the app handle load, stress, and data volume well?|  
+|👤 User Satisfaction                | Will the end-user experience be smooth and intuitive?         |          
 
 🔍 Why Software Testing is Important
 Without testing, software could lead to:
@@ -37,11 +38,12 @@ In 2018, British Airways lost customer data due to a bug in their payment system
 
 🔍 Difference Between Error, Defect, Bug & Failure
 
-Term	                           Meaning
-Error                     	A human mistake in the code (by developer or tester)
-Defect                      The result of an error in the application
-Bug	                        Informal term for a defect, used during testing
-Failure	                    When the software doesn’t perform its intended function in real-time
+|Term          |	                           Meaning                                    |
+|------------- |------------------------------------------------------------------------|
+|Error         | A human mistake in the code (by developer or tester)                   |
+|Defect        | The result of an error in the application                              |
+|Bug           | Informal term for a defect, used during testing                        |
+|Failure       | When the software doesn’t perform its intended function in real-time   |
 
 🧠 Example: A developer forgets a condition → that’s an error.
 When the software crashes because of it → it’s a failure.
